@@ -1,42 +1,54 @@
-  // start with strings, numbers and booleans
+// start with strings, numbers and booleans
 
-    // Let's say we have an array
-    const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+let age = 100
+let age2 = age
+console.log(age, age2)
+age = 200
+console.log(age, age2)
 
-    // and we want to make a copy of it.
+let name = 'Monika'
+let name2 = name
+console.log(name, name2)
+name = 'Łukasz'
+console.log(name, name2)
 
-    // You might think we can just do something like this:
+// Let's say we have an array
+const players = ['Wes', 'Sarah', 'Ryan', 'Poppy']
 
-    // however what happens when we update that array?
+// and we want to make a copy of it.
 
-    // now here is the problem!
+// You might think we can just do something like this:
 
-    // oh no - we have edited the original array too!
+// however what happens when we update that array?
 
-    // Why? It's because that is an array reference, not an array copy. They both point to the same array!
+// now here is the problem!
 
-    // So, how do we fix this? We take a copy instead!
+// oh no - we have edited the original array too!
 
-    // one way
+// Why? It's because that is an array reference, not an array copy. They both point to the same array!
 
-    // or create a new array and concat the old one in
+// So, how do we fix this? We take a copy instead!
 
-    // or use the new ES6 Spread
+// one way
 
-    // now when we update it, the original one isn't changed
+// or create a new array and concat the old one in
 
-    // The same thing goes for objects, let's say we have a person object
+// or use the new ES6 Spread
 
-    // with Objects
-    const person = {
-      name: 'Wes Bos',
-      age: 80
-    };
+// now when we update it, the original one isn't changed
 
-    // and think we make a copy:
+// The same thing goes for objects, let's say we have a person object
 
-    // how do we take a copy instead?
+// with Objects
+const person = {
+	name: 'Wes Bos',
+	age: 80,
+}
 
-    // We will hopefully soon see the object ...spread
+// and think we make a copy:
 
-    // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+// how do we take a copy instead?
+
+// We will hopefully soon see the object ...spread
+
+// Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
